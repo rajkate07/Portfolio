@@ -1,0 +1,89 @@
+/* src/styles/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* Light gray background */
+  color: #333; /* Dark gray text */
+  line-height: 1.6;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem; /* Responsive padding */
+  width: 100%; /* Ensure it takes full width within max-width */
+}
+
+/* General button styles */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* Fully rounded */
+  font-weight: 700; /* Bold */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.button-primary {
+  background-color: #2563eb; /* Blue-600 */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow-lg */
+}
+
+.button-primary:hover {
+  background-color: #1d4ed8; /* Blue-700 */
+  transform: scale(1.05); /* Hover:scale-105 */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+}
+
+.button-secondary {
+  background-color: #4f46e5; /* Indigo-600 */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow-lg */
+  
+}
+
+.button-secondary:hover {
+  background-color: #4338ca; /* Indigo-700 */
+  transform: scale(1.05); /* Hover:scale-105 */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+}
+
+/* Common section styles */
+.section-title {
+  font-size: 2.5rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  text-align: center;
+  color: #1f2937; /* gray-900 */
+  margin-bottom: 2rem; /* mb-8 */
+}
+
+/* Card/Section base styles */
+.section-card {
+  background-color: white;
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  padding: 2rem; /* p-8 */
+  margin-top: 2rem; /* my-8 */
+  margin-bottom: 2rem; /* my-8 */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .section-card {
+    padding: 3rem; /* md:p-12 */
+  }
+}

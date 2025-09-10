@@ -1,0 +1,102 @@
+/* src/styles/About.css */
+.about-section {
+  background-color: rgb(183, 213, 243);
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  padding: 2rem; /* p-8 */
+  margin-top: 2rem; /* my-8 */
+  margin-bottom: 2rem; /* my-8 */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .about-section {
+    padding: 3rem; /* md:p-12 */
+  }
+}
+
+.about-content {
+  max-width: 48rem; 
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75; /* leading-relaxed */
+}
+
+.about-paragraph {
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.about-highlight {
+  font-weight: 600; /* font-semibold */
+}
+
+.about-italic {
+  font-style: italic;
+}
+
+.about-subtitle {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #2563eb; /* blue-600 */
+  margin-top: 2.5rem; /* mt-10 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* gap-3 */
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.skill-tag {
+  background-color: #eff6ff; /* blue-100 */
+  color: #1e40af; /* blue-800 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 9999px; /* rounded-full */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space-y-8 */
+}
+
+.experience-item {
+  background-color: #eff6ff; /* blue-50 */
+  border-left: 4px solid #2563eb; /* border-l-4 border-blue-600 */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+}
+
+.experience-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  color: #1f2937; /* gray-900 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.experience-company {
+  color: #4f46e5; /* indigo-700 */
+}
+
+.experience-dates {
+  color: #4b5563; /* gray-600 */
+  font-style: italic;
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.experience-responsibilities {
+  list-style: disc;
+  list-style-position: inside;
+  color: #374151; /* gray-700 */
+  padding-left: 0; /* Remove default padding */
+}
+
+.experience-responsibilities li {
+  margin-bottom: 0.5rem; /* space-y-2 */
+}

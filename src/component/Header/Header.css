@@ -1,0 +1,79 @@
+/* src/styles/Header.css */
+.header {
+  background: linear-gradient(to right, #2563eb, #4f46e5); /* from-blue-600 to-indigo-700 */
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+  padding-top: 1rem; /* py-4 */
+  padding-bottom: 1rem; /* py-4 */
+}
+
+.navbar {
+  max-width: 1200px; /* container mx-auto */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+.site-title-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.25rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.025em; /* tracking-tight */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.site-title-button:hover {
+  color: #bfdbfe; /* blue-200 */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* space-x-6 */
+}
+
+.nav-link-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding-bottom: 0.25rem; /* Small padding for underline */
+}
+
+.nav-link-button:hover {
+  color: #bfdbfe; /* blue-200 */
+}
+
+.nav-link-button .nav-link-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* h-0.5 */
+  background-color: #bfdbfe; /* blue-200 */
+  transform: scaleX(0); /* scale-x-0 */
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link-button:hover .nav-link-underline,
+.nav-link-button.active .nav-link-underline {
+  transform: scaleX(1); /* group-hover:scale-x-100, scale-x-100 */
+}
+
+.nav-link-button.active {
+  color: #bfdbfe; /* text-blue-200 */
+}
