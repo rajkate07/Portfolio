@@ -1,12 +1,6 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 body {
-  overflow-y: scroll; /* Always show vertical scrollbar */
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
 }
-.content {
-      height: 200vh; /* Taller than the viewport */
-      background: linear-gradient(#f0f, #0ff);
-    }

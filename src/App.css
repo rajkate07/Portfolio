@@ -9,7 +9,63 @@ body {
   background-color: #f4f7f6; /* Light gray background */
   color: #333; /* Dark gray text */
   line-height: 1.6;
+  overflow-y: scroll; /* always show */
+  overflow-x: scroll;
+  overflow: auto; /* shows only when content overflows */
+  height: 300px;        /* fixed height to demonstrate */
+  overflow-y: auto;     /* scroll if needed */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: white;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
 
 .app-container {
   min-height: 100vh;

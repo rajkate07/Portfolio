@@ -18,9 +18,16 @@ const App = () => {
   const handleClosePopup = () => {
     setShowPopup(false);
   };
+    const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   // State to manage the current active section for navigation
   const [activeSection, setActiveSection] = useState('home');
+  
+
 
   // Function to render the content based on the active section
   const renderSection = () => {
@@ -37,7 +44,6 @@ const App = () => {
         return <Home />;
     }
   };
-
   return (
     //popup
     <>
@@ -80,10 +86,7 @@ const Header = ({ activeSection, setActiveSection }) => {
     <header className="header">
       <nav className="navbar">
         {/* Site title/logo, links to home */}
-        <button
-          onClick={() => setActiveSection('home')}
-          className="site-title-button"
-        >
+        <button onClick={() => setActiveSection('home')} className="site-title-button">
           Rajnandan Umesh Kate
         </button>
 
@@ -94,9 +97,7 @@ const Header = ({ activeSection, setActiveSection }) => {
               <button
                 onClick={() => setActiveSection(item.id)}
                 // Apply active styling if the section matches the current activeSection state
-                className={`nav-link-button ${
-                  activeSection === item.id ? 'active' : ''
-                }`}
+                className={`nav-link-button ${activeSection === item.id ? 'active' : ''}`}
               >
                 {item.name}
                 {/* Underline effect for active and hover states */}
@@ -157,7 +158,7 @@ const About = () => {
           user-friendly experiences that solve real-world problems.
         </p>
         <p className="about-paragraph">
-          My journey into coding began <span className="about-italic">[mention how you started, e.g., in college, through a bootcamp, self-taught]</span>.
+          My journey into coding began <span className="about-italic">in college</span>.
           I thrive on continuous learning and embracing new challenges in the ever-evolving tech landscape.
         </p>
 
@@ -423,6 +424,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 // Export the main App component as default
 export default App;
