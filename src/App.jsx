@@ -233,9 +233,9 @@ const Projects = () => {
       title: 'Portfolio Website (This One!)',
       description: 'My personal portfolio website, showcasing my skills, projects, and experience. Built with React and styled using standard CSS for a clean and responsive design.',
       technologies: ['React', 'Standard CSS', 'JavaScript', 'HTML'],
-      demoLink: '#', // This is the current app
-      githubLink: 'https://github.com/yourusername/my-portfolio',
-      image: 'https://placehold.co/400x250/C0C0C0/000000?text=Portfolio+Site'
+      demoLink: 'https://portfolio-raj-five.vercel.app/', // This is the current app
+      githubLink: 'https://github.com/rajkate07/Portfolio.git',
+      image: "./images/port_webpage.png"
     }
   ];
 
