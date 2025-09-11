@@ -236,6 +236,15 @@ const Projects = () => {
       demoLink: 'https://portfolio-raj-five.vercel.app/', // This is the current app
       githubLink: 'https://github.com/rajkate07/Portfolio.git',
       image: "./images/port_webpage.png"
+    },
+    {
+      id: 4,
+      title: 'Portfolio Demo Grid',
+      description: 'This is only portfolio website. Built with HTML5 and styled using standard CSS for a clean and responsive design.',
+      technologies: ['Standard CSS', 'HTML5'],
+      demoLink: 'https://portfolio-demo-grid.vercel.app/', // This is the current app
+      githubLink: 'https://github.com/rajkate07/Portfolio.git',
+      image: "./images/port_demo_grid.png"
     }
   ];
 
